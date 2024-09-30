@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Question 1 avec les cases à cocher -->
+    <TextView
+        android:id="@+id/question1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="1. Le pattern MVC signifie :"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/mvc_multiple_versions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Multiple Versions Combined"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/mvc_model_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Model View Controller"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/mvc_main_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Main Value Compiled"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/mvc_mandatory_validated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Mandatory Validated Controls"
+        android:textSize="18sp" />
+
+    <!-- Question 2 avec les boutons radio -->
+    <TextView
+        android:id="@+id/question2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="30dp"
+        android:text="2. La syntaxe ${x} est permise dans une JSP :"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/jsp_syntax_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/jsp_syntax_oui"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="30dp"
+            android:text="OUI"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/jsp_syntax_non"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NON"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <!-- Boutons Quitter et Suivant -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/button_quit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:backgroundTint="#80DBE7"
+            android:text="Quitter"
+            android:textColor="#101010"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#65DDED"
+            android:text="Suivant"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
